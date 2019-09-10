@@ -1,7 +1,32 @@
-@import "../../node_modules/tailwindcss/dist/base.css";
+@tailwind base;
 
-@import "../../node_modules/tailwindcss/dist/components.css"; 
+@tailwind components;
 
-@import "./components/buttons.css"; 
+.btn {
+    @apply inline-block px-5 py-3 mb-4 rounded-lg text-sm text-center uppercase tracking-wider font-semibold;
+}
+.btn:focus {
+    @apply outline-none shadow-outline;
+}
+
+.btn-indigo {
+    @apply bg-indigo-600 text-white;
+}
+.btn-indigo:hover {  
+    @apply bg-indigo-400;
+}
+.btn-indigo:active { 
+    @apply bg-indigo-600;
+}
+
+.btn-gray {
+    @apply bg-gray-400 text-gray-900; 
+}
+.btn-gray:hover {
+    @apply bg-gray-500; 
+}
+.btn-gray:active {
+    @apply bg-gray-600;
+}  
  
-@import "../../node_modules/tailwindcss/dist/utilities.css";      
+@tailwind utilities;
